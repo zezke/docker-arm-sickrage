@@ -5,13 +5,13 @@ This is a Dockerfile setup for SickRage (https://sickrage.github.io/) that is co
 ## Building it
 
 ```
-docker build . -t zezke/sickrage
+docker build . -t zezke/arm-sickrage
 ```
 
 ## Running
 
 ```
-docker run -d --name="SickRage"-v /path/to/sickrage/config:/config -p 8081:8081 zezke/arm-sickrage
+docker run -d --name="SickRage" -v /path/to/sickrage/config:/config -p 8081:8081 zezke/arm-sickrage
 ```
 
-You might want to add *--restart always** to handle any crashes that might occur.
+You might want to add *--restart always* to handle any crashes that might occur.
